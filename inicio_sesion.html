@@ -56,37 +56,49 @@
                 <label for="fechanacimiento">Fecha de nacimiento</label>
                 <input type="date" id="nacimiento" size="60em" placeholder="Tipear su fecha de nacimiento">
             </div>
-            <div class="form-group">
+            <div class="form-group2">
                 <label for="provincia">Provincia</label>
             </div>
             <select id="provincia">
                 <option value="x1">Opcion X1</option>
             </select>
-            <div class="form-group">
+            <div class="form-group2">
                 <label for="ciudad">Ciudad</label>
             </div>
             <select id="ciudad">
                 <option value="x1">Opcion X1</option>
             </select>
-            <div class="form-group">
+            <div class="form-group2">
                 <label for="opc_usr">¿Es estudiante o Profesor?</label>
+                <select required name="tipo_usuario" class="form-control">
+                    <option value="#"></option>
+                    <option value="tipo_usuario">Estudiante</option>
+                    <option value="tipo_usuario">Profesor</option>
+                </select>
             </div>
-            <select id="opc_usr">
-                <option value="x1">Opcion X1</option>
-            </select>
-            <div class="form-group">
-                <label for="ciclo_lectivo">Seleccione su ciclo lectivo</label>
-            </div>
-            <select id="tipo_ecurrucl">
-                <option value="x1">Opcion X1</option>
-            </select>
-            <div class="form-group">
+            <div class="form-group2">
                 <label for="carrera">Seleccione su carrera</label>
+                <select required name="carrera" class="form-control">
+                    <option value="#"></option>
+                    <option value="enfermeria">Enfermería</option>
+                </select>
             </div>
-            <select id="carrera">
-                <option value="x1">Opcion X1</option>
-            </select>
-            <button type="submit" value="Enviar"></button>
+            <div class="form-group2">
+                <label for="espacio_curricular">Espacio Curricular</label>
+                <select required name="espacio_curricular" class="form-control">
+                    <option value="#"></option>
+                    <option value="espacio_curricular">Practica I</option>
+                    <option value="espacio_curricular">Practica II</option>
+                    <option value="espacio_curricular">Practica III</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciclo_lectivo">Ciclo lectivo</label>
+                <input required type="text" id="ciclo_lectivo" name="ciclo_lectivo" size="60em" placeholder="Tipear su año lectivo">
+            </div>
+            <div class="btn-group btn-group-xl d-grid gap-2 col-6 mx-auto" role="group" aria-label="Basic example">
+                <button type="submit" class="btn btn-primary btn-lg" value="enviar">Enviar</button>
+            </div>
             
         </form>
     </div>
