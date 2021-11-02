@@ -1,3 +1,14 @@
+<?php
+
+require_once "./conexion.php";
+
+$consulta = "SELECT * from tipos_usuarios";
+$datos = mysqli_query($enlace, $consulta);
+$fila = mysqli_fetch_array ($datos);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -46,7 +57,7 @@
             </div>
             <div class="form-group">
                 <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" size="60em" placeholder="Tipear su correo electrónico">
+                <input type="email" name="email" id="email" size="60em" placeholder="Tipear su correo electrónico">
             </div>
             <div class="form-group">
                 <label for="direccion">Dirección</label>
